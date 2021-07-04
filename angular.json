@@ -44,7 +44,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "baseHref": "https://ruben-salgado.github.io/apwhere/apwhere/",
+              "baseHref": "https://ruben-salgado.github.io/apwhere/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
