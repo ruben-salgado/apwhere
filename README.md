@@ -47,4 +47,4 @@ Previsualizaci&oacute;n del ejercicio: [Abrir Demostraci&oacute;n][L-demo]
 
 <!-- Vinculos -->
 [L-nodejs]:       https://nodejs.org/es/
-[L-demo]:         https://ruben-salgado.github.io/apwhere/employee/formulary
+[L-demo]:         https://ruben-salgado.github.io/apwhere
