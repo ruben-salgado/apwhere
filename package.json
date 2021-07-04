@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "deploy": "ng build --prod --output-path dist --base-href https://ruben-salgado.github.io/apwhere/",
+    "build": "ng build --prod --output-path dist --base-href https://ruben-salgado.github.io/apwhere/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
