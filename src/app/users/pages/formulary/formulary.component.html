@@ -1,0 +1,57 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Agregar Empleado</mat-card-title>
+      <mat-card-subtitle>Asegurese de introducir los datos correctos</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="employeeForm">
+            <mat-form-field appearance="fill" [ngClass]="showErrorsMultiple('name')">
+                <mat-label>Nombre</mat-label>
+                <input matInput formControlName="name" placeholder="Nombre">
+                <mat-error *ngIf="employeeForm.controls.name.touched && employeeForm.controls.name.invalid">
+                    <span *ngIf="employeeForm.controls.name.errors?.required">El nombre es obligatorio</span>
+                    <div *ngIf="employeeForm.controls.name.errors?.minlength">
+                        El nombre m&iacute;nimo debe contener 4 caracteres.
+                    </div>
+                    <span *ngIf="employeeForm.controls.name.errors?.pattern">El texto contiene caracteres no v&aacute;lidos</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill" [ngClass]="showErrorsMultiple('lastname')">
+                <mat-label>Apellido</mat-label>
+                <input matInput formControlName="lastname" placeholder="Apellido">
+                <mat-error *ngIf="employeeForm.controls.lastname.touched && employeeForm.controls.lastname.invalid">
+                    <span *ngIf="employeeForm.controls.lastname.errors?.required">El apellido es obligatorio</span>
+                    <div *ngIf="employeeForm.controls.lastname.errors?.minlength">
+                        El apellido m&iacute;nimo debe contener 4 caracteres.
+                    </div>
+                    <span *ngIf="employeeForm.controls.lastname.errors?.pattern">El texto contiene caracteres no v&aacute;lidos</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Departamento</mat-label>
+                <mat-select formControlName="department" (change)="changeDepartment($event)">
+                    <mat-option value="" disabled>-- Seleccionar el departamento --</mat-option>
+                    <mat-option *ngFor="let department of departments" [value]="department">
+                        {{ department }}
+                    </mat-option>
+                </mat-select>
+                <mat-error *ngIf="employeeForm.controls.department.errors?.required">
+                    <span>Indicar el departamento del empleado</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Edad</mat-label>
+                <input matInput formControlName="age" type="number" min="18" max="80" placeholder="Edad">
+                <mat-error *ngIf="employeeForm.controls.age.errors?.age">
+                    <span>No se introdujo una edad v&aacute;lida</span>
+                </mat-error>
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" [disabled]="!employeeForm.valid" (click)="send()">Enviar</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+

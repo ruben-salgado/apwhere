@@ -1,0 +1,244 @@
+<mat-toolbar color="primary">
+    <span>Preguntas y Respuestas del examen</span>
+</mat-toolbar>
+
+<div class="container">
+    <div class="question">
+        <p>1. &iquest;Qu&eacute; entiende por herencia?</p>
+        <blockquote>Es una herramienta con la que se pueden transferir propiedades y caracter&iacute;sticas de un objeto m&aacute;s general a uno m&aacute;s espec&iacute;fico, un ejemplo ser&iacute;a un veh&iacute;culo, que es el elemento padre, con el cual se puede trasladar una persona o un objeto, y el elemento m&aacute;s particular es un autom&oacute;vil o un avi&oacute;n, en donde ambos poseen sus propias caracter&iacute;sticas espec&iacute;ficas, pero con ambos se puede llevar cosas de un punto a otro, es decir, comparten la propiedad que es un medio de transporte y la acci&oacute;n del desplazamiento.</blockquote>
+    </div>
+    <div class="question">
+        <p>2. Define el concepto 'clase' en la programaci&oacute;n orientada a objetos</p>
+        <blockquote>Forma en la cual se pueden representar las cosas tangibles o de entendimiento coloquial y trasladarlas al c&oacute;digo para llevar a cabo una tarea espec&iacute;fica. La forma en la que se estructuran es usando propiedades y acciones.</blockquote>
+    </div>
+    <div class="question">
+        <p>3. &iquest;Qu&eacute; entiende por polimorfismo?</p>
+        <blockquote>Cuando se quiere realizar acciones que son distintas o que tienen alguna variante en su flujo y para ello cambian las propiedades o argumentos, pero se conserva el mismo nombre.</blockquote>
+    </div>
+    <div class="question">
+        <p>4. &iquest;Qu&eacute; c&oacute;digo de los siguientes tiene que ver con la herencia?</p>
+        <ul class="options">
+            <li class="selected">public class Componente extends Producto</li>
+            <li>public class Componente inherit Producto</li>
+            <li>public class Componente implements Producto</li>
+            <li>public class Componente belong to Producto</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>5. &iquest;M&eacute;todo que se utiliza para a&ntilde;adir al final de una cadena en la clase Stringbuffer?</p>
+        <blockquote>append</blockquote>
+    </div>
+    <div class="question">
+        <p>6. &iquest;Qu&eacute; es Eclipse?</p>
+        <blockquote>Es un entorno de desarrollo que provee las herramientas necesarias para poder escribir de una forma m&aacute;s amigable y compilar de forma r&aacute;pida el c&oacute;digo, as&iacute; como otras herramientas que le ayudan al desarrollador, para poder comprobar errores, calidad en el c&oacute;digo, sincronizaci&oacute;n con repositorios, etc.</blockquote>
+    </div>
+    <div class="question">
+        <p>
+            7. Cree una pantalla d&oacute;nde en la parte superior tenga 2 botones a manera de men&uacute; utilizando Routing con Angular 11.
+        </p>
+        <div class="instructions">
+            <span>En el primer bot&oacute;n de nombre "Formulario" utilice un formulario con los siguientes campos.</span>
+            <ul>
+                <li>"Nombre" String (Obligatorio)</li>
+                <li>"Apellido" String (Obligatorio)</li>
+                <li>"Departamento" Select con las siguientes opciones Contabilidad, Marketing y Sistemas (Obligatorio)</li>
+                <li>"Edad" Numérico (No obligatorio).</li>
+            </ul>
+            <span>
+                De tal forma que al transmitir se agregue a un arreglo el cual contendr&aacute; la lista de "empleados" de una empresa.
+                <br>
+                Para el formulario utilice Material design para dar formato a los campos de entrada agregado etiquetas a cada campo 
+                y la validaci&aacute;n de s&oacute;lo hasta llenar campos obligatorios se habilite el bot&oacute;n de enviar en el formulario.
+            </span>
+            <button mat-raised-button color="primary" routerLink="/employee/formulary">Ver Soluci&oacute;n</button>
+            <span>En el segundo bot&oacute;n de nombre "Lista de empleados".</span>
+            <span>Crear una tabla d&oacute;nde se enlistan todos los elementos del arreglo "empleados" cargados en el punto anterior.</span>
+            <button mat-raised-button color="primary" routerLink="/employee/lists">Ver Soluci&oacute;n</button>
+        </div>
+    </div>
+    <div class="question">
+        <p>8. Dada la siguiente tabla escriba la sentencia para insertar un registro con los siguientes valores, ID es 321, Nombre “GUANTE”  y precio “110,000.00”.</p>
+        <table>
+            <thead><tr><th>PRODUCTO</th></tr></thead>
+            <tbody>
+                <tr><td>ID</td></tr>
+                <tr><td>NOMBRE</td></tr>
+                <tr><td>PRECIO</td></tr>
+            </tbody>
+        </table>
+        <blockquote>INSERT INTO PRODUCTO(ID, NOMBRE, PRECIO) VALUES(321, 'GUANTE', 110000);</blockquote>
+    </div>
+    <div class="question">
+        <p>9. Dadas las siguientes tablas “ESTADOS” y “PLANTAS” generar un reporte a trav&eacute;s de una sentencia SQL mediante la cual se desea obtener el total de empleados que existe en cada estado de la republica donde en caso que no existan plantas en determinado estado este debe aparecer con valor “Cero” adicional se debe organizar de mayor a menor en el n&uacute;mero total de empleados en el estado.</p>
+        <table>
+            <caption>ESTADOS</caption>
+            <thead>
+                <tr>
+                    <th>ID_ESTADO</th>
+                    <th>NOMBRE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Aguas Calientes</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Baja California</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Baja California Sur</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <caption>PLANTAS</caption>
+            <thead>
+                <tr>
+                    <th>ID_PLANTA</th>
+                    <th>ID_ESTADO</th>
+                    <th>NUMERO_EMPLEADOS</th>
+                    <th>NOMBRE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09</td>
+                    <td>03</td>
+                    <td>321</td>
+                    <td>LOS CABOS</td>
+                </tr>
+                <tr>
+                    <td>08</td>
+                    <td>02</td>
+                    <td>550</td>
+                    <td>MEXICALI</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>1000</td>
+                    <td>TIJUANA</td>
+                </tr>
+            </tbody>
+        </table>
+        <blockquote>
+            <pre>
+                <code>
+                    {{"
+SELECT e.NOMBRE AS ESTADO,
+    CASE
+        WHEN SUM(p.NUMERO_EMPLEADOS) > 0 THEN
+            SUM(p.NUMERO_EMPLEADOS)
+        ELSE 0
+    END AS EMPLEADOS
+FROM ESTADOS e
+LEFT OUTER JOIN PLANTAS p
+    ON(e.ID_ESTADO = p.ID_ESTADO)
+GROUP BY e.NOMBRE
+ORDER BY EMPLEADOS DESC;
+                    "}}
+                </code>
+            </pre>
+        </blockquote>
+    </div>
+    <div class="question">
+        <p>10. &iquest;Cu&aacute;l de los siguientes c&oacute;digos es correcto para el manejo de errores en Java?</p>
+        <ul class="options">
+            <li>
+                <pre>
+                    <code>
+                        {{"
+catch(IOException|SQLException ex) {
+    logger.log(ex);
+    throw ex;
+}
+                        "}}
+                    </code>
+                </pre>
+            </li>
+            <li class="selected">
+                <pre>
+                    <code>
+                        {{"
+catch(IOException ex) {
+    logger.log(ex);
+    throw ex;
+} catch(SQLException ex) {
+    logger.log(ex);
+    throw ex;
+}
+                        "}}
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <pre>
+                    <code>
+                        {{"
+catch(IOException e) {
+    logger.log(ex);
+    throw ex;
+} catch(SQLException e) {
+    logger.log(ex);
+    throw ex;
+}
+                        "}}
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <pre>
+                    <code>
+                        {{"
+catch(IOException e1) {
+    logger.log(ex);
+    throw ex;
+} catch(SQLException e2) {
+    logger.log(ex);
+    throw ex;
+}
+                        "}}
+                    </code>
+                </pre>
+            </li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>11. Describe en breves palabras el patr&oacute;n de arquitectura de software MVC.</p>
+        <blockquote>Su estructura se fundamenta en la separaci&oacute;n del c&oacute;digo haciendo que cada componente pueda trabajar de manera independiente y de ser necesario cambiar su implementaci&oacute;n sin afectar al resto de capas.
+            <ul>
+                <li>
+                    <strong>Vista: </strong>
+                    <span>Es lo que puede visualizar el usuario directamente.</span>
+                </li>
+                <li>
+                    <strong>Modelo: </strong>
+                    <span>En esta capa es en d&oacute;nde se encuentra toda la l&oacute;gica de negocio, es decir, la manipulaci&oacute;n de los datos obtenidos de diferentes fuentes, para tener una estructura adecuada a la solicitud.</span>
+                </li>
+                <li>
+                    <strong>Controlador: </strong>
+                    <span>Es quien procesa y formatea la informaci&oacute;n que ver&aacute; el usuario. Decide como se van a presentar los datos obtenidos por el modelo y como se van a enviar hacia la vista.</span>
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+    <div class="question">
+        <p>12. Define que es XPATH.</p>
+        <blockquote>Es un sistema usado para navegar por el &aacute;rbol de un archivo XML y poder leer la estructura del mismo.</blockquote>
+    </div>
+    <div class="question">
+        <p>13. Define que es AJAX.</p>
+        <blockquote>Cuando se requiere que se puedan atender m&uacute;ltiples operaciones al mismo tiempo o incluso cuando solo es una operaci&oacute;n, pero que no se desea bloquear al usuario, es cuando se utiliza ajax, que es una tecnolog&iacute;a que permite comunicaci&oacute;n as&iacute;ncrona desde el cliente hacia el servidor.</blockquote>
+    </div>
+    <div class="question">
+        <p>14. Define que es JSON</p>
+        <blockquote>Un formato en el que se estructura la informaci&oacute;n de la forma clave - valor, encerrando sus datos entre llaves. Usado ampliamente para el intercambio de datos cliente-servidor, entendiendo que el cliente es quien solicita los datos y &eacute;ste tambi&eacute;n puede ser otro servidor o un dispositivo que tiene el usuario final.</blockquote>
+    </div>
+    <div class="question">
+        <p>15. &iquest;Qu&eacute; es JPQL?</p>
+        <blockquote>Lenguaje que permite de forma r&aacute;pida realizar consultas a la base de datos mediante anotaciones en las clases de java, evitando as&iacute; usar consultas directas a la base, sustituy&eacute;ndolas por consultas m&aacute;s orientadas hacia una l&oacute;gica entre objetos puramente de java.</blockquote>
+    </div>
+</div>
